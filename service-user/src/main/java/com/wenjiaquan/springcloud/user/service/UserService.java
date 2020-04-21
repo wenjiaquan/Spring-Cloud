@@ -24,6 +24,8 @@ public class UserService {
      */
     public String getUsernameByid(Integer id){
         User user = getUserByid(id);
+        user.setId(id);
+        user.setName("username");
         return user.getName();
     }
 }
