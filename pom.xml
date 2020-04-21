@@ -10,6 +10,7 @@
         <module>service-user-interface</module>
         <module>service-user</module>
         <module>service-order</module>
+		<module>consul-client</module>
     </modules>
 
     <groupId>com.wjq</groupId>
