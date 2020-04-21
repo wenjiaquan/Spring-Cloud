@@ -7,6 +7,9 @@
     <modules>
         <module>eureka-server</module>
         <module>eureka-client</module>
+        <module>service-user-interface</module>
+        <module>service-user</module>
+        <module>service-order</module>
     </modules>
 
     <groupId>com.wjq</groupId>
