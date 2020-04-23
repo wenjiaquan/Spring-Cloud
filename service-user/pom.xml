@@ -51,6 +51,11 @@
             <artifactId>velocity-engine-core</artifactId>
             <version>2.2</version>
         </dependency>
+        <!--hystrix熔断器-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

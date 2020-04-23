@@ -1,4 +1,4 @@
-package com.wenjiaquan.springcloud.zuul.filter;
+package com.wenjiaquan.springcloud.dashboard.filter;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;

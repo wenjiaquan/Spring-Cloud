@@ -12,6 +12,7 @@
         <module>service-order</module>
 		<module>consul-client</module>
         <module>zuul-server</module>
+        <module>hystrix-dashboard</module>
     </modules>
 
     <groupId>com.wjq</groupId>

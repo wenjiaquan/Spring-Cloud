@@ -1,22 +1,20 @@
-package com.wenjiaquan.springcloud.order;
+package com.wenjiaquan.springcloud.dashboard;
 
 import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
 
-@SpringBootApplication
+@EnableZuulProxy
 @EnableEurekaClient
-@EnableFeignClients
-@MapperScan("com.wenjiaquan.springcloud.order.mapper")
-public class ServiceOrderApplication {
+@SpringBootApplication
+public class ZuulServerApplication {
     public static void main(String[] args) {
 
-        SpringApplication.run(ServiceOrderApplication.class,args);
+        SpringApplication.run(ZuulServerApplication.class, args);
     }
 
     /**
