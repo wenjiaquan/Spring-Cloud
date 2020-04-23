@@ -31,8 +31,7 @@ public class OrderController {
         //User user = restTemplate.getForObject("http://service-user/user/getUserByid?id=" + order.getId(), User.class);
         User u = new User();
         User user = userFeignClient.getUserByid(id);
-        u.setId(1);
-        order.setId(1);
+        System.err.println(user);
         order.setUsername(user.getName());
         log.info("user:{}",user);
         return order;

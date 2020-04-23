@@ -25,6 +25,7 @@ public class RibbonConfig {
      * 负债均衡的算法
      * @return
      */
+    @Bean
     public IRule iRule(){
         //随机算法
         return new RandomRule();

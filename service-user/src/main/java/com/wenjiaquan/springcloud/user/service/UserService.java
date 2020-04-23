@@ -1,20 +1,22 @@
 package com.wenjiaquan.springcloud.user.service;
 
+import com.wenjiaquan.springcloud.user.mapper.UserMapper;
 import com.wenjiaquan.springcloud.user.model.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserService {
+    @Autowired
+    private UserMapper userMapper;
+
     /**
      * 根据id获取user
      * @param id
      * @return
      */
     public User getUserByid(Integer id){
-        User user = new User();
-        user.setId(id);
-        user.setName("username");
-        return user;
+        return userMapper.getUserByid(id);
     }
 
     /**

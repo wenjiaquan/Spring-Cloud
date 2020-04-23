@@ -11,6 +11,7 @@
         <module>service-user</module>
         <module>service-order</module>
 		<module>consul-client</module>
+        <module>zuul-server</module>
     </modules>
 
     <groupId>com.wjq</groupId>
@@ -39,5 +40,4 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 </project>
