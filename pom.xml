@@ -13,6 +13,8 @@
 		<module>consul-client</module>
         <module>zuul-server</module>
         <module>hystrix-dashboard</module>
+        <module>jpa-demo</module>
+        <module>test</module>
     </modules>
 
     <groupId>com.wjq</groupId>
